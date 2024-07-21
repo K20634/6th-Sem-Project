@@ -1,0 +1,279 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/images/bg.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header styles */
+header {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure position context for the menu */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo, title, and menu */
+    width: 100%;
+}
+
+/* Ensure the logo is on the far left */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.logo img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Toggle menu styles */
+.menu-container {
+    position: relative;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    color: red;
+    display: flex;
+}
+
+.toggle-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.toggle-menu button {
+    display: block;
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #000;
+    text-align: left;
+    width: 90px;
+}
+
+.toggle-menu button:hover {
+    background-color: #f0f0f0;
+    display: block;
+   
+}
+/* Main content styles */
+main {
+    padding: 20px;
+    background-color: #fff;
+    position: relative; /* For overlay positioning */
+    height: 100vh; /* Ensure the main section takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('/images/bg.webp') no-repeat center center fixed; /* Add background image */
+    background-size: cover;
+    
+}
+
+/* Center text on the background image */
+.text-overlay {
+    position: relative; /* Absolute positioning to layer text over the image */
+    top: 15%; /* Center text vertically */
+    left: 38%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Offset text to ensure center alignment */
+    font-size: 32px; /* Adjust text size as needed */
+    color: #fff; /* White text for contrast */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px 30px; /* Add padding for better appearance */
+    border-radius: 10px; /* Rounded corners */
+    z-index: 1; /* Ensure text is above other content */
+    text-align: center; /* Center the text inside the overlay */
+}
+
+.text-overlay2 {
+    position: relative; /* Absolute positioning to layer text over the image */
+    top: 15%; /* Center text vertically */
+    left: 50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Offset text to ensure center alignment */
+    font-size: 32px; /* Adjust text size as needed */
+    color: #fff; /* White text for contrast */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px 30px; /* Add padding for better appearance */
+    border-radius: 10px; /* Rounded corners */
+    z-index: 1; /* Ensure text is above other content */
+    text-align: center; /* Center the text inside the overlay */
+}
+
+.text-overlay3 {
+    position: relative; /* Absolute positioning to layer text over the image */
+    top: 30%; /* Center text vertically */
+    left: 52.5%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Offset text to ensure center alignment */
+    font-size: 32px; /* Adjust text size as needed */
+    color: #fff; /* White text for contrast */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px 30px; /* Add padding for better appearance */
+    border-radius: 10px; /* Rounded corners */
+    z-index: 1; /* Ensure text is above other content */
+    text-align: center; /* Center the text inside the overlay */
+}
+
+#cart-items {
+    display: flex;
+    position: relative;
+    color: #fff;
+    gap: 20px;
+    margin-top: -20px;
+    
+}
+
+/* Cart image styles */
+#cart-items .product-image {
+    border-radius: 10px; /* Rounded corners */
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+.order-history-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; /* Space between orders */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Light background for better visibility */
+    color: #fff;
+    border-radius: 10px;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+    padding: 10px;
+    background-color: #fff; /* White background for each order item */
+    color: #000;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.order-image {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    object-fit: cover; /* Ensure images fit within the specified dimensions */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+.order-item-details {
+    flex: 1; /* Make text take up the remaining space */
+}
+
+
+#product-list {    
+    display: flex;
+    gap: 50px;
+    position: relative;
+    margin-top: -90px;
+   
+}
+
+
+.product {
+    background-color: rgba(255,255,255,0.5);
+    
+    border-radius: 2px;
+    padding: 10px;
+    color: #222;
+    border-radius: 15px;
+    text-align: left;
+    
+}
+
+.order {
+
+   
+background-color: rgba(0,0,0,0.5);
+    
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+    
+    text-align: center;
+    
+}
+
+
+.product h3, .product p {
+           
+            line-height: 0.5; /* Adjust line height if necessary */
+        }
+
+.product img {
+    width: 250px !important; /* Adjusted width */
+    height: 250px !important; /* Adjusted height */
+}
+
+form {
+    display: flex;
+    
+    flex-direction: column;
+    width: 400px;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="email"] {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+   
+}
+
+button:hover {
+    background-color: #3a78c1;
+}

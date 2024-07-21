@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="admin-content">
+<div class="order">
+        
+        <form id="login-form" onsubmit="event.preventDefault(); loginAdmin();">
+            <h2>Admin Login</h2>
+            <input type="text" id="admin-username" placeholder="Username" required>
+            <input type="password" id="admin-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+</div>
+        
+        <div id="admin-actions" style="display:none;">
+            <h2>Fetch Orders</h2>
+            <form id="fetch-orders-form" onsubmit="event.preventDefault(); fetchOrders();">
+                <input type="text" id="fetch-username" placeholder="Enter username" required>
+                <button type="submit">Fetch Orders</button>
+            </form>
+
+            <div id="orders-list"></div>
+        </div>
+ 
+    </main>
+    <script src="admin-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="/images/logo.webp" alt="Logo" style="width:60px; height:40px;" href="#" onclick="navigateTo('index')">
+            </div>
+            <div class="title">
+                <img src="/images/title.webp" alt="Logo" style="width:200px; height:50px;" href="#" onclick="navigateTo('index')">
+            </div>
+            <div class="menu-container">
+                <button id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <div id="toggle-menu" class="toggle-menu">
+                    <button onclick="navigateTo('products')">Products</button>
+                    <button onclick="navigateTo('cart')">Cart</button>
+                    <button onclick="navigateTo('contact')">Contact</button>
+                    <button onclick="viewOrderHistory()">Order History</button>
+                    <button id="auth-button" onclick="handleAuth()">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <!-- Content will be loaded here dynamically -->
+    </main>
+    <script src="/scripts.js"></script>
+</body>
+</html>
