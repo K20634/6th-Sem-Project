@@ -1,4 +1,4 @@
-git clone https://github.com/K20634/5th-Sem-Project.git
+git clone https://github.com/K20634/6th-Sem-Project.git
 
 cd apparelstore
 
